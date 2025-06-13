@@ -1,124 +1,107 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!-- Versão multilíngue, PDF, formulário e base para vídeo --><!DOCTYPE html><html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DALA CURE OS – BioAI‑CTX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DALA CURE OS</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f0fdf4;
-      margin: 0;
-      color: #1a1a1a;
-    }
-    header, footer {
-      background-color: #115e3d;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      max-width: 960px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #115e3d;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
-      margin-top: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-    }
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; color: #222; }
+    header, footer { background-color: #1f8b4c; color: white; padding: 30px; text-align: center; }
+    .container { padding: 20px; max-width: 960px; margin: auto; }
+    h1, h2 { color: #1f8b4c; }
+    section { margin-bottom: 40px; }
+    .card { background: white; border-radius: 10px; padding: 20px; margin-top: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05); }
     .btn {
-      background-color: #115e3d;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 20px;
-      display: inline-block;
-      font-weight: bold;
+      background-color: #1f8b4c; color: white; padding: 12px 25px;
+      border: none; border-radius: 5px; text-decoration: none; margin-top: 20px; display: inline-block;
     }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .avatar {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .avatar img {
-      width: 110px;
-      border-radius: 50%;
-      border: 4px solid #115e3d;
+    .lang-toggle { position: absolute; top: 20px; right: 30px; }
+    .lang-toggle button { background: #fff; border: 1px solid #ccc; padding: 5px 10px; cursor: pointer; }
+    form input, form textarea {
+      width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 5px;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>🌍 DALA CURE OS</h1>
-    <p>Plataforma Africana BioAI‑CTX para Terapias Condicionais de Cura Global</p>
-  </header>
-
-  <div class="container">
-
-    <div class="avatar">
-      <img src="https://raw.githubusercontent.com/dala35/assets/main/avatar-futurista-dala.png" alt="Avatar do Criador Dala">
-      <p><strong>Criado por Dala De Carvalho – Visionário da Cura Ética</strong></p>
-    </div>
-
+  <div class="lang-toggle">
+    <button onclick="toggleLanguage('pt')">Português</button>
+    <button onclick="toggleLanguage('en')">English</button>
+  </div>  <header>
+    <h1 id="title">DALA CURE OS</h1>
+    <p id="subtitle">Ciência Africana Viva para Curar com Inteligência, Ética e Esperança</p>
+  </header>  <div class="container">
     <section>
-      <h2>🔬 Plataforma BioAI‑CTX</h2>
+      <h2 id="plataformaTitle">🔬 Plataforma BioAI CTX</h2>
       <div class="card">
-        <p><strong>Missão:</strong> Erradicar o HIV e outras doenças invisíveis com terapias programáveis, seguras e éticas.</p>
-        <p><strong>Tecnologias:</strong> Cas12b, IA embarcada, vetores biointeligentes, biossensores DalaScan, módulos IBTEM.</p>
-        <a href="#modulos" class="btn">👁️ Ver Módulos da Plataforma</a>
+        <p id="mission"><strong>Missão:</strong> Eliminar reservatórios virais e doenças crônicas com terapias biointeligentes.</p>
+        <p><strong>Tecnologias:</strong> Cas12b, IA embarcada, vetores LNP, sensores moleculares, imunomodulação ética.</p>
+        <a href="#modulos" class="btn" id="verModulos">Ver Módulos</a>
+        <a href="assets/DALA-CURE-OS-OFICIAL.pdf" class="btn" download>📄 Baixar PDF Oficial</a>
       </div>
-    </section>
-
-    <section id="modulos">
-      <h2>🧠 Núcleos da Plataforma</h2>
-      <div class="card">
-        <ul>
-          <li><strong>IBTEM:</strong> Inteligência Bioética Terapêutica Embarcada</li>
-          <li><strong>DALA-SCAN:</strong> Sensores de HIV Latente e Citocinas</li>
-          <li><strong>SIGMA‑D:</strong> Motor Genético de Cura e Simulação</li>
-          <li><strong>NeuroReanima™:</strong> Regeneração cerebral para AVC e Alzheimer</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>📈 Impacto Esperado</h2>
-      <div class="card">
-        <p>✓ Eliminação de até 93% do HIV latente</p>
-        <p>✓ Produção descentralizada em países africanos</p>
-        <p>✓ Rastreabilidade ética e auditável (IBTEM)</p>
-        <p>✓ Custo acessível por terapia: $120 a $250</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>⚡ Chamada ao Futuro</h2>
-      <div class="card">
-        <p>Esta não é apenas uma plataforma. É o código de um futuro justo. Onde inteligência encontra alma. Onde África cura o mundo.</p>
-        <a href="https://dala35.github.io/Bioai-Ctx-Simulator/" class="btn" target="_blank">🧪 Acessar Simulador BioAI‑CTX</a>
-      </div>
-    </section>
-
+    </section><section id="modulos">
+  <h2>🧠 Módulos do Sistema</h2>
+  <div class="card">
+    <ul>
+      <li><strong>IBTEM:</strong> Inteligência Bioética Terapêutica Embarcada</li>
+      <li><strong>DALA-SCAN:</strong> Biosensor molecular para detecção de HIV latente</li>
+      <li><strong>SIGMA D:</strong> Sistema de Gestão Molecular Automatizado</li>
+      <li><strong>NeuroReanima™:</strong> Terapia de regeneração cerebral funcional</li>
+    </ul>
   </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Dala De Carvalho – DALA CURE OS SUPREMO</p>
-    <p>Com IA Bioética, Código de Esperança e Legado de Futuro</p>
-  </footer>
+<section>
+  <h2>📈 Impacto Esperado</h2>
+  <div class="card">
+    <p>✓ Eliminação de >90% do HIV latente</p>
+    <p>✓ Terapias acessíveis por região</p>
+    <p>✓ Proteção de identidade genética e cultural</p>
+  </div>
+</section>
 
-</body>
+<section>
+  <h2>💡 Chamada à Ação</h2>
+  <div class="card">
+    <p>Esta plataforma não é apenas um software. É a arquitetura de um novo mundo. Com base africana. Com alma.</p>
+    <a href="https://dala35.github.io/Bioai-Ctx-Simulator/" class="btn" target="_blank">Ver Simulador</a>
+  </div>
+</section>
+
+<section>
+  <h2>📬 Propor Colaboração</h2>
+  <div class="card">
+    <form action="https://formsubmit.co/daladecarvalho@domain.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea name="mensagem" placeholder="Sua carta de intenção..." rows="5" required></textarea>
+      <button type="submit" class="btn">Enviar Proposta</button>
+    </form>
+  </div>
+</section>
+
+  </div>  <footer>
+    <p>&copy; 2025 Dala De Carvalho – Plataforma Oficial do DALA CURE OS</p>
+    <p>Desenvolvido com IA Ética, Visão Humana e Código de Esperança</p>
+  </footer>  <script>
+    const textos = {
+      pt: {
+        title: "DALA CURE OS",
+        subtitle: "Ciência Africana Viva para Curar com Inteligência, Ética e Esperança",
+        mission: "Missão: Eliminar reservatórios virais e doenças crônicas com terapias biointeligentes.",
+        verModulos: "Ver Módulos"
+      },
+      en: {
+        title: "DALA CURE OS",
+        subtitle: "African Science Alive to Heal with Intelligence, Ethics and Hope",
+        mission: "Mission: Eliminate viral reservoirs and chronic diseases using biointelligent therapies.",
+        verModulos: "See Modules"
+      }
+    };
+    function toggleLanguage(lang) {
+      document.getElementById("title").textContent = textos[lang].title;
+      document.getElementById("subtitle").textContent = textos[lang].subtitle;
+      document.getElementById("mission").textContent = textos[lang].mission;
+      document.getElementById("verModulos").textContent = textos[lang].verModulos;
+    }
+  </script></body>
 </html>
